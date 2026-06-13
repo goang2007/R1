@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/*
+ * 디자인 토큰 — 연간 기록 앱
+ * 베이스: 화이트/블랙 · 포인트 4색(참조 팔레트)
+ * 폰트: Pretendard
+ */
+@theme {
+  /* Base */
+  --color-paper: #ffffff; /* 배경 */
+  --color-ink: #1a1a1a; /* 기본 텍스트(블랙) */
+  --color-muted: #6b6b6b; /* 보조 텍스트 */
+  --color-line: #ececec; /* 경계선 */
+
+  /* Point — 참조 팔레트 */
+  --color-cream: #e2d9bc; /* 부드러운 면 / 선택된 책갈피 바탕 */
+  --color-blue: #80abd7; /* 보조 포인트 / 진행률 게이지 */
+  --color-red: #b20e19; /* 메인 포인트: 주요 버튼 / 활성 책갈피 / 달성 강조 */
+  --color-brown: #683629; /* 텍스트 강조 / 깊은 포인트 / 책장 분위기 */
+
+  /* Point tints (옅은 배경용) */
+  --color-cream-soft: #f3eedd;
+  --color-blue-soft: #e3eef7;
+  --color-red-soft: #f6e3e4;
+  --color-brown-soft: #ede5e1;
+
+  /* Fonts */
+  --font-sans: var(--font-pretendard), system-ui, sans-serif;
+
+  /* Radius */
+  --radius-card: 1rem; /* rounded-2xl 톤 */
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
